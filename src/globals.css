@@ -13,6 +13,30 @@
   color-scheme: dark;
 }
 
+.encima-sabor{
+  position: absolute;
+  z-index: 10;
+  backdrop-filter: blur(6px);
+background-color: #00000000;
+
+}
+
+.bg-gradient{
+background: #f72de6;
+background: linear-gradient(90deg, rgba(247, 45, 230, 1) 0%, rgba(227, 118, 30, 1) 50%, rgba(237, 217, 33, 1) 100%);
+
+}
+
+.bg-blur-transparent{
+backdrop-filter: blur(6px);
+background-color: #00000005;
+border: 1px solid #7272723d;
+}
+
+.blug-bg{
+backdrop-filter: blur(6px);
+}
+
 .hash-span {
   margin-top: -100px;
   padding-bottom: 100px;

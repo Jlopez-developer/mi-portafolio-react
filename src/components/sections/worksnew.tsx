@@ -3,13 +3,13 @@ import { motion } from "framer-motion";
 
 import { github } from "../../assets";
 import { SectionWrapper } from "../../hoc";
-import { projects } from "../../constants";
+import { TProjectn } from "../../constants";
 import { fadeIn } from "../../utils/motion";
 import { config } from "../../constants/config";
 import { Header } from "../atoms/Header";
-import { TProject } from "../../types";
+import { TProjectnew } from "../../types";
 
-const ProjectCard: React.FC<{ index: number } & TProject> = ({
+const ProjectCardnew: React.FC<{ index: number } & TProjectnew> = ({
   index,
   name,
   description,
@@ -29,7 +29,7 @@ const ProjectCard: React.FC<{ index: number } & TProject> = ({
         tiltMaxAngleY={30}
         glareColor="#aaa6c3"
       >
-        {/* fixed size card so all cards keep same height */}
+        {/* fija tamaño y estructura para que todas las cards sean iguales */}
         <div className="bg-tertiary w-full rounded-2xl p-5 h-[420px] flex flex-col justify-between">
           <div className="relative h-[180px] w-full">
             <img
@@ -76,23 +76,13 @@ const ProjectCard: React.FC<{ index: number } & TProject> = ({
 const Works = () => {
   return (
     <>
-      <Header useMotion={true} {...config.sections.works} />
-
-      <div className="flex w-full">
-        <motion.p
-          variants={fadeIn("", "", 0.1, 1)}
-          className="text-secondary mt-3 max-w-3xl text-[17px] leading-[30px]"
-        >
-          {config.sections.works.content}
-        </motion.p>
-      </div>
 
       <div className="mt-20 flex flex-wrap gap-7">
-        {projects.map((project, index) => (
-          <ProjectCard
-            key={`project-${project.name ?? index}`}
+        {TProjectn.map((TProjectn, index) => (
+          <ProjectCardnew
+            key={`project-${TProjectn.name ?? index}`}
             index={index}
-            {...project}
+            {...TProjectn}
           />
         ))}
       </div>

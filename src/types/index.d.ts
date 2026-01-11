@@ -11,6 +11,19 @@ export type TExperience = {
   points: string[];
 } & Required<Omit<TCommonProps, "name">>;
 
+
+
+interface CompanyTag {
+  name: string;
+  color: string;
+}
+export type TMExperienceCard = {
+  companyName: CompanyTag[];
+  iconBg: string;
+  date: string;
+  points: string[];
+} & Required<Omit<TCommonProps, "name">>;
+
 export type TTestimonial = {
   testimonial: string;
   designation: string;
@@ -27,6 +40,17 @@ export type TProject = {
   image: string;
   sourceCodeLink: string;
 } & Required<Pick<TCommonProps, "name">>;
+
+export type TProjectnew = {
+  description: string;
+  tags: {
+    name: string;
+    color: string;
+  }[];
+  image: string;
+  sourceCodeLink: string;
+} & Required<Pick<TCommonProps, "name">>;
+
 
 export type TTechnology = Required<Omit<TCommonProps, "title">>;
 

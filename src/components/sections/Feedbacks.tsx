@@ -17,11 +17,11 @@ const FeedbackCard: React.FC<{ index: number } & TTestimonial> = ({
 }) => (
   <motion.div
     variants={fadeIn("", "spring", index * 0.5, 0.75)}
-    className="bg-black-200 xs:w-[320px] w-full rounded-3xl p-10"
+    className="bg-black-200 xs:w-[320px] w-full rounded-3xl p-10 h-[420px] flex flex-col justify-between"
   >
     <p className="text-[48px] font-black text-white">"</p>
 
-    <div className="mt-1">
+    <div className="mt-1 flex-1 flex flex-col justify-between">
       <p className="text-[18px] tracking-wider text-white">{testimonial}</p>
 
       <div className="mt-7 flex items-center justify-between gap-1">

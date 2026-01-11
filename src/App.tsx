@@ -1,5 +1,5 @@
 import { BrowserRouter } from "react-router-dom";
-
+import "./globals.css";
 import {
   About,
   Contact,
@@ -10,6 +10,7 @@ import {
   Tech,
   Works,
   StarsCanvas,
+  Worksnew,
 } from "./components";
 import { useEffect } from "react";
 import { config } from "./constants/config";
@@ -23,8 +24,8 @@ const App = () => {
 
   return (
     <BrowserRouter>
-      <div className="bg-primary relative z-0">
-        <div className="bg-hero-pattern bg-cover bg-center bg-no-repeat">
+      <div className="bg-gradient relative z-0">
+        <div className="bg-gradient bg-cover bg-center bg-no-repeat">
           <Navbar />
           <Hero />
         </div>
@@ -32,6 +33,7 @@ const App = () => {
         <Experience />
         <Tech />
         <Works />
+        <Worksnew />
         <Feedbacks />
         <div className="relative z-0">
           <Contact />

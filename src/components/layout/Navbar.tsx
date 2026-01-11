@@ -4,6 +4,7 @@ import { Link } from "react-router-dom";
 import { styles } from "../../constants/styles";
 import { navLinks } from "../../constants";
 import { logo, menu, close } from "../../assets";
+import profile from "../../assets/projects/perfil.png";
 import { config } from "../../constants/config";
 
 const Navbar = () => {
@@ -14,7 +15,7 @@ const Navbar = () => {
   useEffect(() => {
     const handleScroll = () => {
       const scrollTop = window.scrollY;
-      if (scrollTop > 100) {
+      if (scrollTop > 500) {
         setScrolled(true);
       } else {
         setScrolled(false);
@@ -52,8 +53,8 @@ const Navbar = () => {
     <nav
       className={`${
         styles.paddingX
-      } fixed top-0 z-20 flex w-full items-center py-5 ${
-        scrolled ? "bg-primary" : "bg-transparent"
+      } fixed top-2 z-20 flex w-full items-center py-5 rounded-full  ${
+        scrolled ? "bg-blur-transparent" : "bg-blur-transparent"
       }`}
     >
       <div className="mx-auto flex w-full max-w-7xl items-center justify-between">
@@ -64,7 +65,7 @@ const Navbar = () => {
             window.scrollTo(0, 0);
           }}
         >
-          <img src={logo} alt="logo" className="h-9 w-9 object-contain" />
+          <img src={profile} alt="logo" className="rounded-full h-9 w-9 object-contain" />
           <p className="flex cursor-pointer text-[18px] font-bold text-white ">
             {config.html.title}
           </p>
@@ -75,7 +76,7 @@ const Navbar = () => {
             <li
               key={nav.id}
               className={`${
-                active === nav.id ? "text-white" : "text-secondary"
+                active === nav.id ? "text-dark" : "text-white"
               } cursor-pointer text-[18px] font-medium hover:text-white`}
             >
               <a href={`#${nav.id}`}>{nav.title}</a>
