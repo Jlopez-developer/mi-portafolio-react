@@ -5,8 +5,7 @@ import { github } from "../../assets";
 import { SectionWrapper } from "../../hoc";
 import { TProjectn } from "../../constants";
 import { fadeIn } from "../../utils/motion";
-import { config } from "../../constants/config";
-import { Header } from "../atoms/Header";
+
 import { TProjectnew } from "../../types";
 
 const ProjectCardnew: React.FC<{ index: number } & TProjectnew> = ({
@@ -76,7 +75,6 @@ const ProjectCardnew: React.FC<{ index: number } & TProjectnew> = ({
 const Works = () => {
   return (
     <>
-
       <div className="mt-20 flex flex-wrap gap-7">
         {TProjectn.map((TProjectn, index) => (
           <ProjectCardnew

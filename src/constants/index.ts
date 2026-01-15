@@ -14,6 +14,9 @@ import francel from "../assets/francel.jpeg";
 import monica from "../assets/monica.png";
 
 import manuel from "../assets/manuel.png";
+import shopify1 from "../assets/company/shopify1.png";
+import php from "../assets/company/php.png";
+
 
 import {
   mobile,
@@ -86,7 +89,7 @@ const services: TService[] = [
   },
   {
     title: "shopify developer",
-    icon: backend,
+    icon: shopify1,
   },
   {
     title: "Full stack Developer",

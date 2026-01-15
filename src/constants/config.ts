@@ -42,11 +42,11 @@ export const config: TConfig = {
   html: {
     title: "jonathan — 3D Portfolio",
     fullName: "Jonathan",
-    email: "johndoe@mail.com",
+    email: "Jonathanjjlbb1@gmail.com",
   },
   hero: {
     name: "jonathan",
-    p: ["I develop 3D visuals, user", "interfaces and web applications"],
+    p: ["I develop 3D visuals, user", "interfaces and web applications","Fullstack Developer."],
   },
   contact: {
     p: "Get in touch",

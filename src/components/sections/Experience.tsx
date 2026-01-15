@@ -7,14 +7,14 @@ import {
 import "react-vertical-timeline-component/style.min.css";
 
 import { styles } from "../../constants/styles";
-import { experiences } from "../../constants";
+
 import { ExperienceSCard } from "../../constants";
 
 import { SectionWrapper } from "../../hoc";
-import { Header } from "../atoms/Header";
-import { TExperience } from "../../types";
+
+
 import { TMExperienceCard } from "../../types";
-import { config } from "../../constants/config";
+
 
 const ExperienceCard: React.FC<TMExperienceCard> = (ExperienceSCard) => {
   return (
@@ -39,15 +39,17 @@ const ExperienceCard: React.FC<TMExperienceCard> = (ExperienceSCard) => {
       <div>
         <h3 className="text-[24px] font-bold text-white">{ExperienceSCard.title}</h3>
 
-         {ExperienceSCard.companyName.map((tech, index) => (
-    <span
-      key={index}
-      className="text-sm font-medium px-2 py-1 rounded border"
-      style={{ color: tech.color, borderColor: tech.color }}
-    >
-      {tech.name}
-    </span>
-  ))}
+        <div className="flex flex-wrap gap-2 mt-2">
+          {ExperienceSCard.companyName.map((tech, index) => (
+            <span
+              key={index}
+              className="text-xs sm:text-sm md:text-base font-medium px-2 sm:px-3 py-1 sm:py-2 rounded border whitespace-nowrap"
+              style={{ color: tech.color, borderColor: tech.color }}
+            >
+              {tech.name}
+            </span>
+          ))}
+        </div>
       </div>
 
   

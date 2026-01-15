@@ -1,4 +1,4 @@
-import { motion } from "framer-motion";
+
 
 import { styles } from "../../constants/styles";
 import { ComputersCanvas } from "../canvas";
@@ -22,6 +22,9 @@ const Hero = () => {
           <p className={`${styles.heroSubText} text-white-100 mt-2`}>
             {config.hero.p[0]} <br className="hidden sm:block" />
             {config.hero.p[1]}
+          </p>
+          <p className={`text-white-100 mt-2 text-lg`}>
+            fullstack Developer.
           </p>
         </div>
       </div>

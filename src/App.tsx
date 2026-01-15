@@ -1,4 +1,6 @@
-import { BrowserRouter } from "react-router-dom";
+
+import { HashRouter } from "react-router-dom";
+
 import "./globals.css";
 import {
   About,
@@ -23,7 +25,7 @@ const App = () => {
   }, []);
 
   return (
-    <BrowserRouter>
+    <HashRouter>
       <div className="bg-gradient relative z-0">
         <div className="bg-gradient bg-cover bg-center bg-no-repeat">
           <Navbar />
@@ -40,7 +42,7 @@ const App = () => {
           <StarsCanvas />
         </div>
       </div>
-    </BrowserRouter>
+    </HashRouter>
   );
 };
 
