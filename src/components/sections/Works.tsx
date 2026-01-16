@@ -39,7 +39,7 @@ const ProjectCard: React.FC<{ index: number } & TProject> = ({
             />
             <div className="card-img_hover absolute inset-0 m-3 flex justify-end">
               <div
-                onClick={() => window.open(sourceCodeLink, "_blank")}
+                // onClick={() => window.open(sourceCodeLink, "_blank")}
                 className="black-gradient flex h-10 w-10 cursor-pointer items-center justify-center rounded-full"
               >
                 <img
