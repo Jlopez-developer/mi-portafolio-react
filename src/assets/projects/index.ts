@@ -13,6 +13,11 @@ import sorftware from "./software.png";
 import letynet from "./telynet.png";
 import perfil from "./perfil.png";
 import USMS from "./USMS.png";
+import liCleanSolutions from "./liCleanSolutions.png";
+import corripio from "./corripio.png";
+import Brugal from "./Brugal.png";
+import ism from "./ism.png";
+import Induban from "./Induban.png";
 
 export {
     alcampo,
@@ -30,4 +35,9 @@ export {
     letynet,
     perfil,
     USMS,
+    liCleanSolutions,
+    corripio,
+    Brugal,
+    ism,
+    Induban,
 };

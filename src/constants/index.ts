@@ -45,7 +45,7 @@ import {
   threejs,
 } from "../assets";
 
-import { 
+import {
     alcampo,
     Background,
     barcelona,
@@ -61,6 +61,11 @@ import {
     letynet,
     perfil,
     USMS,
+    liCleanSolutions,
+    corripio,
+    Brugal,
+    ism,
+    Induban,
 } from "../assets/projects";
 
 export const navLinks: TNavLink[] = [
@@ -581,6 +586,159 @@ const TProjectn: TProjectnew[] = [
       },
     ],
     image: IMG_0400,
+    sourceCodeLink: "https://github.com/",
+  },
+  {
+    name: "Li Clean Solutions",
+    description:
+      "Li Clean Solutions is an Uber-like app for cleaning services, barbershops, and other service providers. Users can easily book and manage appointments with various service professionals through a user-friendly interface. The platform connects customers with service providers, offering features like real-time booking, service provider profiles, payment processing, and review systems.",
+    tags: [
+      {
+        name: "Next.js",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "TypeScript",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "CSS",
+        color: "pink-text-gradient",
+      },
+    ],
+    image: liCleanSolutions,
+    sourceCodeLink: "https://github.com/",
+  },
+  {
+    name: "Corripio - CMS Platform",
+    description:
+      "Content Management System developed for Corripio, one of the largest retail companies in the Dominican Republic. The platform enables efficient management of product catalogs, inventory, sales data, and customer information. It provides administrators with tools to update content, manage users, and generate reports through an intuitive interface.",
+    tags: [
+      {
+        name: "PHP",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "JavaScript",
+        color: "yellow-text-gradient",
+      },
+      {
+        name: "C#",
+        color: "purple-text-gradient",
+      },
+      {
+        name: "HTML",
+        color: "orange-text-gradient",
+      },
+      {
+        name: "CSS",
+        color: "pink-text-gradient",
+      },
+      {
+        name: "Bootstrap",
+        color: "green-text-gradient",
+      },
+    ],
+    image: corripio,
+    sourceCodeLink: "https://github.com/",
+  },
+  {
+    name: "Brugal - CMS Platform",
+    description:
+      "Content Management System developed for Brugal, the renowned Dominican rum company. The platform manages product information, distribution data, marketing content, and dealer networks. It includes features for content scheduling, multi-language support, and integration with existing enterprise systems for seamless operations.",
+    tags: [
+      {
+        name: "PHP",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "JavaScript",
+        color: "yellow-text-gradient",
+      },
+      {
+        name: "C#",
+        color: "purple-text-gradient",
+      },
+      {
+        name: "HTML",
+        color: "orange-text-gradient",
+      },
+      {
+        name: "CSS",
+        color: "pink-text-gradient",
+      },
+      {
+        name: "Bootstrap",
+        color: "green-text-gradient",
+      },
+    ],
+    image: Brugal,
+    sourceCodeLink: "https://github.com/",
+  },
+  {
+    name: "ISM - CMS Platform",
+    description:
+      "Content Management System developed for ISM (Industrias Selectas de Medicina), a leading pharmaceutical company. The platform manages medical product catalogs, regulatory documentation, distribution networks, and healthcare provider information. It ensures compliance with industry standards while providing efficient content management capabilities.",
+    tags: [
+      {
+        name: "PHP",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "JavaScript",
+        color: "yellow-text-gradient",
+      },
+      {
+        name: "C#",
+        color: "purple-text-gradient",
+      },
+      {
+        name: "HTML",
+        color: "orange-text-gradient",
+      },
+      {
+        name: "CSS",
+        color: "pink-text-gradient",
+      },
+      {
+        name: "Bootstrap",
+        color: "green-text-gradient",
+      },
+    ],
+    image: ism,
+    sourceCodeLink: "https://github.com/",
+  },
+  {
+    name: "Industrias Induban - CMS Platform",
+    description:
+      "Content Management System developed for Industrias Induban, a major food and beverage company in the Dominican Republic. The platform manages product portfolios, production data, distribution channels, and marketing campaigns. It provides comprehensive tools for content management, analytics, and integration with supply chain systems.",
+    tags: [
+      {
+        name: "PHP",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "JavaScript",
+        color: "yellow-text-gradient",
+      },
+      {
+        name: "C#",
+        color: "purple-text-gradient",
+      },
+      {
+        name: "HTML",
+        color: "orange-text-gradient",
+      },
+      {
+        name: "CSS",
+        color: "pink-text-gradient",
+      },
+      {
+        name: "Bootstrap",
+        color: "green-text-gradient",
+      },
+    ],
+    image: Induban,
     sourceCodeLink: "https://github.com/",
   },
 ];
