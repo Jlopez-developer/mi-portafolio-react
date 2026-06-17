@@ -247,10 +247,10 @@ const ExperienceSCard: TMExperienceCard[] =  [
     iconBg: "#383E56",
     date: "March 2024 - febr 2025",
     points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
+      "Developed full-stack Content Management Systems (CMS) using PHP, Next.js, and MySQL for enterprise clients.",
+      "Designed and implemented scalable CMS architectures with React.js frontend and Node.js backend services.",
+      "Created custom CMS modules for content management, user authentication, and database administration.",
+      "Integrated Shopify e-commerce solutions with custom CMS platforms for seamless product and order management.",
     ],
   },
   
@@ -285,10 +285,10 @@ const ExperienceSCard: TMExperienceCard[] =  [
     iconBg: "#E6DEDD",
     date: "Jan 2025 - Still Working",
     points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
+      "Developed and maintained Content Management Systems (CMS) for large enterprise clients including Corripio, Brugal, ISM, and Industrias Induban.",
+      "Designed CMS architectures using PHP and SQL for efficient content management, inventory control, and business process automation.",
+      "Implemented custom CMS modules for product catalog management, sales tracking, and customer relationship management.",
+      "Created secure and scalable CMS solutions with JavaScript for dynamic content delivery and administrative interfaces.",
     ],
   },
 ];
