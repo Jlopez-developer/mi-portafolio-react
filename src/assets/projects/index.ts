@@ -1,5 +1,5 @@
 import alcampo from "./alcampo.png";
-import background from "./background.png";
+import Background from "./Background.png";
 import barcelona from "./barcelona.png";
 import bitacoras from "./bitacoras.png";
 import enalas from "./enalas.png";
@@ -13,10 +13,15 @@ import sorftware from "./software.png";
 import letynet from "./telynet.png";
 import perfil from "./perfil.png";
 import USMS from "./USMS.png";
+import liCleanSolutions from "./liCleanSolutions.png";
+import corripio from "./corripio.png";
+import Brugal from "./Brugal.png";
+import ism from "./ism.png";
+import Induban from "./Induban.png";
 
 export {
     alcampo,
-    background,
+    Background,
     barcelona,
     bitacoras,
     enalas,
@@ -30,4 +35,9 @@ export {
     letynet,
     perfil,
     USMS,
+    liCleanSolutions,
+    corripio,
+    Brugal,
+    ism,
+    Induban,
 };

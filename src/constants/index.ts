@@ -47,7 +47,7 @@ import {
 
 import {
     alcampo,
-    background,
+    Background,
     barcelona,
     bitacoras,
     enalas,
@@ -61,14 +61,12 @@ import {
     letynet,
     perfil,
     USMS,
+    liCleanSolutions,
+    corripio,
+    Brugal,
+    ism,
+    Induban,
 } from "../assets/projects";
-
-// Imágenes pendientes de agregar al repositorio — usando placeholders temporales
-const liCleanSolutions = sorftware;
-const corripio = forlexx;
-const Brugal = letynet;
-const ism = alcampo;
-const Induban = barcelona;
 
 export const navLinks: TNavLink[] = [
   {
