@@ -5,7 +5,7 @@ export const textVariant = () => {
   return {
     hidden: {
       y: -50,
-      opacity: 0,
+      
     },
     show: {
       y: 0,
