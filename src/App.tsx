@@ -26,8 +26,8 @@ const App = () => {
 
   return (
     <HashRouter>
-      <div className="bg-gradient relative z-0">
-        <div className="bg-gradient bg-cover bg-center bg-no-repeat">
+      <div className="bg-[#060e1e] relative z-0">
+        <div className="hero-section bg-cover bg-center bg-no-repeat">
           <Navbar />
           <Hero />
         </div>

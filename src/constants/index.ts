@@ -10,6 +10,7 @@ import type {
 } from "../types";
 
 import francel from "../assets/francel.jpeg";
+import axionLogo from "../assets/axion_logo.jpg";
 
 import monica from "../assets/monica.png";
 
@@ -66,6 +67,11 @@ import {
     Brugal,
     ism,
     Induban,
+    gestorFinanciero,
+    dailyWishes,
+    ahorrosMetas,
+    citasMedicas,
+    inventarioRecordatorio,
 } from "../assets/projects";
 
 export const navLinks: TNavLink[] = [
@@ -318,6 +324,30 @@ const testimonials: TTestimonial[] = [
     company: "Mixart",
     image: monica,
   },
+  {
+    testimonial:
+      "The platform transformed our academic management completely. Intuitive, robust, and reduced admin time by over 60%. Outstanding work!",
+    name: "Director Académico",
+    designation: "Director",
+    company: "Enalas",
+    image: enalas,
+  },
+  {
+    testimonial:
+      "The app connects our clients with service providers quickly and securely. Delivered on time with exceptional quality.",
+    name: "CEO",
+    designation: "Chief Executive Officer",
+    company: "Li Clean Solutions",
+    image: liCleanSolutions,
+  },
+  {
+    testimonial:
+      "Exceeded all our expectations. Clean UI, great charts, and our users have significantly improved their personal finance control.",
+    name: "Product Owner",
+    designation: "Product Manager",
+    company: "Gestor Financiero",
+    image: gestorFinanciero,
+  },
 ];
 
 const projects: TProject[] = [
@@ -442,6 +472,66 @@ const projects: TProject[] = [
 ];
 
 const TProjectn: TProjectnew[] = [
+  {
+    name: "Gestor Financiero",
+    description:
+      "Aplicación móvil de gestión financiera personal que permite a los usuarios registrar ingresos, egresos y visualizar su situación económica en tiempo real. Incluye gráficas de análisis, categorización de gastos y reportes mensuales para un mejor control del presupuesto.",
+    tags: [
+      { name: "React Native", color: "blue-text-gradient" },
+      { name: "TypeScript", color: "blue-text-gradient" },
+      { name: "SQLite", color: "green-text-gradient" },
+    ],
+    image: gestorFinanciero,
+    sourceCodeLink: "https://github.com/",
+  },
+  {
+    name: "Daily Wishes",
+    description:
+      "Aplicación móvil de bienestar que envía al usuario deseos, motivaciones y afirmaciones positivas diariamente. Permite personalizar los mensajes según el estado de ánimo, programar recordatorios y compartir los deseos favoritos con amigos y familiares.",
+    tags: [
+      { name: "React Native", color: "blue-text-gradient" },
+      { name: "TypeScript", color: "blue-text-gradient" },
+      { name: "Firebase", color: "orange-text-gradient" },
+    ],
+    image: dailyWishes,
+    sourceCodeLink: "https://github.com/",
+  },
+  {
+    name: "Ahorros por Metas Online",
+    description:
+      "Plataforma web para la gestión de ahorro por objetivos. Los usuarios pueden crear metas de ahorro personalizadas, definir montos y plazos, monitorear su progreso con gráficas y recibir notificaciones cuando se acercan a sus objetivos financieros.",
+    tags: [
+      { name: "React", color: "blue-text-gradient" },
+      { name: "Node.js", color: "green-text-gradient" },
+      { name: "MySQL", color: "blue-text-gradient" },
+    ],
+    image: ahorrosMetas,
+    sourceCodeLink: "https://github.com/",
+  },
+  {
+    name: "Citas Médicas",
+    description:
+      "Sistema de gestión de citas médicas que conecta pacientes con especialistas. Permite agendar, modificar y cancelar citas, gestionar el historial de consultas, enviar recordatorios automáticos y administrar la agenda de los médicos de forma eficiente.",
+    tags: [
+      { name: "React", color: "blue-text-gradient" },
+      { name: "PHP", color: "pink-text-gradient" },
+      { name: "MySQL", color: "blue-text-gradient" },
+    ],
+    image: citasMedicas,
+    sourceCodeLink: "https://github.com/",
+  },
+  {
+    name: "Inventario con Recordatorio",
+    description:
+      "Sistema de control de inventario con alertas inteligentes de stock mínimo. Permite gestionar productos, proveedores y movimientos de almacén, generando reportes automáticos y enviando notificaciones cuando un artículo está por agotarse.",
+    tags: [
+      { name: "React", color: "blue-text-gradient" },
+      { name: "PHP", color: "pink-text-gradient" },
+      { name: "SQL", color: "green-text-gradient" },
+    ],
+    image: inventarioRecordatorio,
+    sourceCodeLink: "https://github.com/",
+  },
   {
     name: "floriano - Ecomerce",
     description:
@@ -742,6 +832,7 @@ const TProjectn: TProjectnew[] = [
     sourceCodeLink: "https://github.com/",
   },
 ];
+
 
 
 

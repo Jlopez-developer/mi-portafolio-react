@@ -40,13 +40,13 @@ type TConfig = {
 
 export const config: TConfig = {
   html: {
-    title: "jonathan — 3D Portfolio",
-    fullName: "Jonathan",
+    title: "Axion Systems",
+    fullName: "Axion Systems",
     email: "Jonathanjjlbb1@gmail.com",
   },
   hero: {
-    name: "jonathan",
-    p: ["I develop 3D visuals, user", "interfaces and web applications","Fullstack Developer."],
+    name: "Axion Systems",
+    p: ["Desarrollamos soluciones digitales,", "sistemas y aplicaciones web.", "Desarrollo • Automatización • Soluciones"],
   },
   contact: {
     p: "Get in touch",

@@ -27,7 +27,7 @@ const ProjectCard: React.FC<{ index: number } & TProject> = ({
         tiltEnable
         tiltMaxAngleX={30}
         tiltMaxAngleY={30}
-        glareColor="#aaa6c3"
+        glareColor="#0057FF"
       >
         {/* fixed size card so all cards keep same height */}
         <div className="bg-tertiary w-full rounded-2xl p-5 h-[420px] flex flex-col justify-between">
