@@ -1,10 +1,11 @@
-
-
+import { useTranslation } from "react-i18next";
 import { styles } from "../../constants/styles";
 import { ComputersCanvas } from "../canvas";
 import { config } from "../../constants/config";
 
 const Hero = () => {
+  const { t } = useTranslation();
+
   return (
     <section className={`relative mx-auto h-screen w-full`}>
       <div
@@ -21,11 +22,11 @@ const Hero = () => {
             <span className="text-white">Systems</span>
           </h1>
           <p className={`${styles.heroSubText} text-white-100 mt-2`}>
-            {config.hero.p[0]} <br className="hidden sm:block" />
-            {config.hero.p[1]}
+            {t("hero.p0")} <br className="hidden sm:block" />
+            {t("hero.p1")}
           </p>
           <p className={`text-[#0057FF] mt-2 text-lg font-semibold tracking-widest uppercase`}>
-            {config.hero.p[2]}
+            {t("hero.p2")}
           </p>
         </div>
       </div>

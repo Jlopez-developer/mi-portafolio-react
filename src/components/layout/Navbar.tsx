@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
+import { useTranslation } from "react-i18next";
 
 import { styles } from "../../constants/styles";
 import { navLinks } from "../../constants";
@@ -11,6 +12,11 @@ const Navbar = () => {
   const [active, setActive] = useState<string | null>();
   const [toggle, setToggle] = useState(false);
   const [scrolled, setScrolled] = useState(false);
+  const { t, i18n } = useTranslation();
+
+  const toggleLanguage = () => {
+    i18n.changeLanguage(i18n.language.startsWith("es") ? "en" : "es");
+  };
 
   useEffect(() => {
     const handleScroll = () => {
@@ -49,6 +55,8 @@ const Navbar = () => {
     };
   }, []);
 
+  const isEs = i18n.language.startsWith("es");
+
   return (
     <nav
       className={`${
@@ -71,7 +79,7 @@ const Navbar = () => {
           </p>
         </Link>
 
-        <ul className="hidden list-none flex-row gap-10 sm:flex">
+        <ul className="hidden list-none flex-row gap-10 sm:flex items-center">
           {navLinks.map((nav) => (
             <li
               key={nav.id}
@@ -79,9 +87,21 @@ const Navbar = () => {
                 active === nav.id ? "text-dark" : "text-white"
               } cursor-pointer text-[18px] font-medium hover:text-white`}
             >
-              <a href={`#${nav.id}`}>{nav.title}</a>
+              <a href={`#${nav.id}`}>{t(`nav.${nav.id}`)}</a>
             </li>
           ))}
+          {/* Language toggle button */}
+          <li>
+            <button
+              onClick={toggleLanguage}
+              className="flex items-center gap-1 rounded-full border border-[#0057FF] px-3 py-1 text-[14px] font-semibold transition-colors"
+              title={isEs ? "Switch to English" : "Cambiar a Español"}
+            >
+              <span className={isEs ? "text-[#0057FF]" : "text-white/50"}>ES</span>
+              <span className="text-white/30">|</span>
+              <span className={!isEs ? "text-[#0057FF]" : "text-white/50"}>EN</span>
+            </button>
+          </li>
         </ul>
 
         <div className="flex flex-1 items-center justify-end sm:hidden">
@@ -108,9 +128,20 @@ const Navbar = () => {
                     setToggle(!toggle);
                   }}
                 >
-                  <a href={`#${nav.id}`}>{nav.title}</a>
+                  <a href={`#${nav.id}`}>{t(`nav.${nav.id}`)}</a>
                 </li>
               ))}
+              {/* Language toggle in mobile menu */}
+              <li>
+                <button
+                  onClick={toggleLanguage}
+                  className="flex items-center gap-1 rounded-full border border-[#0057FF] px-3 py-1 text-[14px] font-semibold"
+                >
+                  <span className={isEs ? "text-[#0057FF]" : "text-white/50"}>ES</span>
+                  <span className="text-white/30">|</span>
+                  <span className={!isEs ? "text-[#0057FF]" : "text-white/50"}>EN</span>
+                </button>
+              </li>
             </ul>
           </div>
         </div>
@@ -120,3 +151,4 @@ const Navbar = () => {
 };
 
 export default Navbar;
+

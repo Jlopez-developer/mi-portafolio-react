@@ -13,7 +13,9 @@ i18n
       es: { translation: es },
       en: { translation: en },
     },
-    fallbackLng: "en",
+    supportedLngs: ["es", "en"],   // idiomas disponibles
+    load: "languageOnly",           // en-US → en, es-419 → es
+    fallbackLng: "es",              // si el idioma no es es/en → español
     interpolation: {
       escapeValue: false,
     },

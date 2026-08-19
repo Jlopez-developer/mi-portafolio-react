@@ -425,7 +425,7 @@ const projects: TProject[] = [
   {
     name: "Cooperativa Barcelona - Ecomerce",
     description:
-      "I developed an e-commerce website for Cooperativa Barcelona using Shopify, focused on selling local and sustainable products. The design was customized to reflect the identity of the cooperative, improving the shopping experience with intuitive navigation and an optimized checkout process. I implemented a responsive interface that ensures perfect performance on mobile and desktop devices. Additionally, it integrates inventory management and analytics tools to optimize business operations",
+      "Developed an e-commerce website for Cooperativa Barcelona using Shopify, focused on selling local and sustainable products. The design was customized to reflect the identity of the cooperative, improving the shopping experience with intuitive navigation and an optimized checkout process. Implemented a responsive interface that ensures perfect performance on mobile and desktop devices. Additionally, it integrates inventory management and analytics tools to optimize business operations",
     tags: [
       {
         name: "shopify",
@@ -438,7 +438,7 @@ const projects: TProject[] = [
   {
     name: "Alcampo Store - Ecomerce",
     description:
-      "I developed an online store for AlcampoStore using Shopify, creating a seamless and visually appealing shopping experience. I was responsible for designing the user interface, optimizing navigation and ensuring efficient integration with payment and inventory management systems. In addition, I implemented a responsive design to ensure a consistent shopping experience across all devices.",
+      "Developed an online store for AlcampoStore using Shopify, creating a seamless and visually appealing shopping experience. Responsible for designing the user interface, optimizing navigation and ensuring efficient integration with payment and inventory management systems. In addition, implemented a responsive design to ensure a consistent shopping experience across all devices.",
     tags: [
       {
         name: "shopify",
@@ -451,7 +451,7 @@ const projects: TProject[] = [
   {
     name: "migration solutions",
     description:
-      "I designed and developed an e-commerce website for Migration Solutions using WordPress and Elementor. The project included creating a custom, easy-to-navigate layout, optimizing the user experience and ensuring a smooth transition of content during the migration. Additionally, I implemented advanced e-commerce functionalities, ensuring effective integration with the payment system and improving search engine visibility..",
+      "Designed and developed an e-commerce website for Migration Solutions using WordPress and Elementor. The project included creating a custom, easy-to-navigate layout, optimizing the user experience and ensuring a smooth transition of content during the migration. Additionally, implemented advanced e-commerce functionalities, ensuring effective integration with the payment system and improving search engine visibility..",
     tags: [
       {
         name: "WordPress",
@@ -535,7 +535,7 @@ const TProjectn: TProjectnew[] = [
   {
     name: "floriano - Ecomerce",
     description:
-      "I developed an online store for Floriano using Laravel and Vue.js, providing an interactive and fast user experience. The project included the design of a custom platform, optimizing product, order and payment management. I implemented a flexible architecture that allows for scalability and future integrations. Additionally, the user interface was carefully designed to be intuitive and fully responsive, improving the shopping experience on mobile and desktop devices",
+      "Developed an online store for Floriano using Laravel and Vue.js, providing an interactive and fast user experience. The project included the design of a custom platform, optimizing product, order and payment management. Implemented a flexible architecture that allows for scalability and future integrations. Additionally, the user interface was carefully designed to be intuitive and fully responsive, improving the shopping experience on mobile and desktop devices",
     tags: [
       {
         name: "laravel",
@@ -668,7 +668,7 @@ const TProjectn: TProjectnew[] = [
    {
     name: "Barcelona - Ecomerce",
     description:
-      "I developed an e-commerce website for Cooperativa Barcelona using Shopify, focused on selling local and sustainable products. The design was customized to reflect the identity of the cooperative, improving the shopping experience with intuitive navigation and an optimized checkout process. I implemented a responsive interface that ensures perfect performance on mobile and desktop devices. Additionally, it integrates inventory management and analytics tools to optimize business operations",
+      "Developed an e-commerce website for Cooperativa Barcelona using Shopify, focused on selling local and sustainable products. The design was customized to reflect the identity of the cooperative, improving the shopping experience with intuitive navigation and an optimized checkout process. Implemented a responsive interface that ensures perfect performance on mobile and desktop devices. Additionally, it integrates inventory management and analytics tools to optimize business operations",
     tags: [
       {
         name: "shopify",

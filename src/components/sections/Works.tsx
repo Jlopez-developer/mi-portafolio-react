@@ -1,11 +1,11 @@
 import Tilt from "react-parallax-tilt";
 import { motion } from "framer-motion";
+import { useTranslation } from "react-i18next";
 
 import { github } from "../../assets";
 import { SectionWrapper } from "../../hoc";
 import { projects } from "../../constants";
 import { fadeIn } from "../../utils/motion";
-import { config } from "../../constants/config";
 import { Header } from "../atoms/Header";
 import { TProject } from "../../types";
 
@@ -74,16 +74,18 @@ const ProjectCard: React.FC<{ index: number } & TProject> = ({
 };
 
 const Works = () => {
+  const { t } = useTranslation();
+
   return (
     <>
-      <Header useMotion={true} {...config.sections.works} />
+      <Header useMotion={true} p={t("works.intro")} h2={t("works.title")} />
 
       <div className="flex w-full">
         <motion.p
           variants={fadeIn("", "", 0.1, 1)}
           className="text-secondary mt-3 max-w-3xl text-[17px] leading-[30px]"
         >
-          {config.sections.works.content}
+          {t("works.content")}
         </motion.p>
       </div>
 
@@ -101,3 +103,4 @@ const Works = () => {
 };
 
 export default SectionWrapper(Works, "");
+

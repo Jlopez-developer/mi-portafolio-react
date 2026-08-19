@@ -9,6 +9,7 @@ type TConfig = {
     title: string;
     fullName: string;
     email: string;
+    phone: string;
   };
   hero: {
     name: string;
@@ -42,7 +43,8 @@ export const config: TConfig = {
   html: {
     title: "Axion Systems",
     fullName: "Axion Systems",
-    email: "Jonathanjjlbb1@gmail.com",
+    email: "admin@axionsystes.com",
+    phone: "+1 (809) 763-8663",
   },
   hero: {
     name: "Axion Systems",

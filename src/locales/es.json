@@ -1,0 +1,52 @@
+﻿{
+    "nav":  {
+                "about":  "Nosotros",
+                "work":  "Experiencia",
+                "contact":  "Contacto"
+            },
+    "hero":  {
+                 "p0":  "Desarrollamos soluciones digitales,",
+                 "p1":  "sistemas y aplicaciones web.",
+                 "p2":  "Desarrollo • Automatización • Soluciones"
+             },
+    "about":  {
+                  "intro":  "Introducción",
+                  "title":  "Descripción General.",
+                  "content":  "Somos un equipo de desarrollo con experiencia en TypeScript y JavaScript, especializados en frameworks como React, Node.js y Three.js. Aprendemos rápido y colaboramos estrechamente con los clientes para crear soluciones eficientes, escalables y fáciles de usar que resuelven problemas reales. ¡Trabajemos juntos para hacer realidad tus ideas!"
+              },
+    "experience":  {
+                       "intro":  "Lo que hemos hecho hasta ahora",
+                       "title":  "Experiencia Laboral."
+                   },
+    "works":  {
+                  "intro":  "Nuestro trabajo",
+                  "title":  "Proyectos.",
+                  "content":  "Los siguientes proyectos muestran nuestras habilidades y experiencia a través de ejemplos del mundo real. Cada proyecto está brevemente descrito con enlaces a repositorios y demos en vivo. Refleja nuestra capacidad para resolver problemas complejos, trabajar con distintas tecnologías y gestionar proyectos de manera efectiva."
+              },
+    "feedbacks":  {
+                      "intro":  "Lo que dicen nuestros clientes",
+                      "title":  "Testimonios."
+                  },
+    "contact":  {
+                    "intro":  "Ponte en contacto",
+                    "title":  "Contacto.",
+                    "name":  {
+                                 "label":  "Tu Nombre",
+                                 "placeholder":  "¿Cuál es tu nombre?"
+                             },
+                    "email":  {
+                                  "label":  "Tu Email",
+                                  "placeholder":  "¿Cuál es tu email?"
+                              },
+                    "message":  {
+                                    "label":  "Tu Mensaje",
+                                    "placeholder":  "¿Qué quieres decirnos?"
+                                },
+                    "send":  "Enviar",
+                    "sending":  "Enviando...",
+                    "success":  "Gracias. Nos pondremos en contacto contigo lo antes posible.",
+                    "error":  "Algo salió mal. Por favor intenta de nuevo.",
+                    "emailLabel":  "Correo",
+                    "phoneLabel":  "Teléfono"
+                }
+}
