@@ -64,7 +64,7 @@ const ComputersCanvas = () => {
   const [isMobile, setIsMobile] = useState(false);
 
   useEffect(() => {
-    const mediaQuery = window.matchMedia("(max-width: 500px)");
+    const mediaQuery = window.matchMedia("(max-width: 768px)");
     setIsMobile(mediaQuery.matches);
 
     const handleMediaQueryChange = (event: MediaQueryListEvent) => {
@@ -78,12 +78,9 @@ const ComputersCanvas = () => {
   }, []);
 
   return (
-    // pointer-events-none en móvil para no bloquear el scroll
-    <div
-      className="absolute inset-0 w-full h-full"
-      style={isMobile ? { pointerEvents: "none" } : {}}
-    >
+    <div className="absolute inset-0 w-full h-full" style={{ touchAction: 'pan-y' }}>
       <Canvas
+        style={{ touchAction: 'pan-y' }}
         frameloop="always"
         shadows
         dpr={[1, 2]}
@@ -91,13 +88,14 @@ const ComputersCanvas = () => {
         gl={{ preserveDrawingBuffer: true }}
       >
         <Suspense fallback={<CanvasLoader />}>
-          <OrbitControls
-            enablePan={false}
-            enableZoom={false}
-            enableRotate={!isMobile}
-            maxPolarAngle={Math.PI / 2}
-            minPolarAngle={Math.PI / 2}
-          />
+          {!isMobile && (
+            <OrbitControls
+              enablePan={false}
+              enableZoom={false}
+              maxPolarAngle={Math.PI / 2}
+              minPolarAngle={Math.PI / 2}
+            />
+          )}
           <Computers isMobile={isMobile} />
         </Suspense>
 
@@ -106,5 +104,6 @@ const ComputersCanvas = () => {
     </div>
   );
 };
+
 
 export default ComputersCanvas;
