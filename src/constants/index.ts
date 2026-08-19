@@ -221,83 +221,93 @@ const experiences: TExperience[] = [
 const ExperienceSCard: TMExperienceCard[] =  [
   {
     title: "Freelancer",
-  companyName: [
-    { name: "PHP", color: "#777BB4" },
- { name: "Next.js", color: "#508a2fff" },
-     { name: "Three.js", color: "#049EF4" },
-    { name: "React.js", color: "#61DAFB" },
-    { name: "Node.js", color: "#339933" },
-    { name: "Shopify", color: "#95BF47" },
-  ],  
-    icon: tesla,
-    iconBg: "#E6DEDD",
-    date: "Jan 2021 - Still Going",
+    companyName: [
+      { name: "PHP", color: "#777BB4" },
+      { name: "Next.js", color: "#508a2fff" },
+      { name: "Three.js", color: "#049EF4" },
+      { name: "React.js", color: "#61DAFB" },
+      { name: "Node.js", color: "#339933" },
+      { name: "Shopify", color: "#95BF47" },
+    ],
+    icon: axionLogo,
+    image: axionLogo,
+    iconBg: "#0a1628",
+    date: "Jan 2021 - Present",
     points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
+      "Delivered full-stack web solutions for clients across multiple industries using React.js, Next.js, PHP, and Node.js.",
+      "Built and launched Shopify e-commerce stores with custom themes, payment integrations, and inventory management.",
+      "Developed 3D interactive web experiences using Three.js for landing pages and product showcases.",
+      "Managed end-to-end project delivery: requirements, design, development, testing, and deployment.",
     ],
   },
-  
+
   {
     title: "Mixart",
- companyName: [
-    { name: "PHP", color: "#777BB4" },
-    { name: "Next.js", color: "#508a2fff" },
-    { name: "React.js", color: "#61DAFB" },
-    { name: "Node.js", color: "#339933" },
-    { name: "MySQL", color: "#4479A1" },
-    { name: "Shopify", color: "#95BF47" },
-  ],     icon: starbucks,
-    iconBg: "#383E56",
-    date: "March 2024 - febr 2025",
+    companyName: [
+      { name: "PHP", color: "#777BB4" },
+      { name: "Next.js", color: "#508a2fff" },
+      { name: "React.js", color: "#61DAFB" },
+      { name: "Node.js", color: "#339933" },
+      { name: "MySQL", color: "#4479A1" },
+      { name: "Shopify", color: "#95BF47" },
+    ],
+    icon: starbucks,
+    image: starbucks,
+    iconBg: "#0a1628",
+    date: "March 2024 - Feb 2025",
     points: [
       "Developed full-stack Content Management Systems (CMS) using PHP, Next.js, and MySQL for enterprise clients.",
       "Designed and implemented scalable CMS architectures with React.js frontend and Node.js backend services.",
-      "Created custom CMS modules for content management, user authentication, and database administration.",
+      "Built custom CMS modules for content management, user authentication, and database administration.",
       "Integrated Shopify e-commerce solutions with custom CMS platforms for seamless product and order management.",
     ],
   },
-  
+
+
   {
     title: "Enalas",
- companyName: [
-    { name: "PHP", color: "#777BB4" },
-    { name: "javaScript", color: "#cfc018ff" },
-    { name: "CSS", color: "#3dcbcbff" },
-    { name: "HTML", color: "#d35f0dff" },
-    { name: "SQL", color: "#4479A1" },
-
-  ],     icon: meta,
-    
-    iconBg: "#383E56",
-    date: "Jan 2023 - Still Working",
+    companyName: [
+      { name: "PHP", color: "#777BB4" },
+      { name: "JavaScript", color: "#cfc018ff" },
+      { name: "CSS", color: "#3dcbcbff" },
+      { name: "HTML", color: "#d35f0dff" },
+      { name: "SQL", color: "#4479A1" },
+      { name: "React", color: "#61DAFB" },
+    ],
+    icon: enalas,
+    image: enalas,
+    iconBg: "#0a1628",
+    date: "Jan 2023 - Present",
     points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
+      "Built and maintained the full web system for ENALAS aeronautical training center, handling student data, flight records, and payments.",
+      "Developed a digital consent management system for student flight authorizations, integrating legal and personal data workflows.",
+      "Designed responsive interfaces for administrative dashboards used by staff, instructors, and directors.",
+      "Implemented a room and dormitory management module with balance tracking and automated billing.",
     ],
   },
+
   {
     title: "Telynet",
- companyName: [
-    { name: "PHP", color: "#777BB4" },
-    { name: "SQL", color: "#4479A1" },
-     { name: "javaScript", color: "#cfc018ff" },
- 
-  ],     icon: shopify,
-    iconBg: "#E6DEDD",
-    date: "Jan 2025 - Still Working",
+    companyName: [
+      { name: "PHP", color: "#777BB4" },
+      { name: "SQL", color: "#4479A1" },
+      { name: "JavaScript", color: "#cfc018ff" },
+      { name: "C#", color: "#9B59B6" },
+      { name: "Bootstrap", color: "#7952B3" },
+    ],
+    icon: letynet,
+    image: letynet,
+    iconBg: "#0a1628",
+    date: "Jan 2025 - Present",
     points: [
-      "Developed and maintained Content Management Systems (CMS) for large enterprise clients including Corripio, Brugal, ISM, and Industrias Induban.",
-      "Designed CMS architectures using PHP and SQL for efficient content management, inventory control, and business process automation.",
-      "Implemented custom CMS modules for product catalog management, sales tracking, and customer relationship management.",
-      "Created secure and scalable CMS solutions with JavaScript for dynamic content delivery and administrative interfaces.",
+      "Developed and maintained CMS platforms for major Dominican enterprises: Corripio, Brugal, ISM, and Industrias Induban.",
+      "Built product catalog management, sales tracking, and customer relationship modules using PHP, SQL, and C#.",
+      "Designed CMS architectures for efficient content delivery, inventory control, and business process automation.",
+      "Created secure administrative interfaces with JavaScript and Bootstrap for multi-user enterprise environments.",
     ],
   },
 ];
+
 
 const testimonials: TTestimonial[] = [
   {

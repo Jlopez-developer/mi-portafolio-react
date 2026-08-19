@@ -44,8 +44,8 @@ const Computers: React.FC<{ isMobile: boolean }> = ({ isMobile }) => {
       <primitive
         ref={modelRef}
         object={computer.scene}
-        scale={isMobile ? 0.55 : 0.75}
-        position={isMobile ? [0, -2.5, -1.5] : [0, -3.25, -4.5]}
+        scale={isMobile ? 0.72 : 0.75}
+        position={isMobile ? [0, -3, -2.2] : [0, -3.25, -4.5]}
         rotation={[-0.01, -0.2, -0.1]}
         onClick={() => {
           isRotating.current = false;
@@ -78,25 +78,32 @@ const ComputersCanvas = () => {
   }, []);
 
   return (
-    <Canvas
-      frameloop="always"
-      shadows
-      dpr={[1, 2]}
-      camera={{ position: [20, 3, 5], fov: isMobile ? 40 : 25 }}
-      gl={{ preserveDrawingBuffer: true }}
+    // pointer-events-none en móvil para no bloquear el scroll
+    <div
+      className="absolute inset-0 w-full h-full"
+      style={isMobile ? { pointerEvents: "none" } : {}}
     >
-      <Suspense fallback={<CanvasLoader />}>
-        <OrbitControls
-          enablePan={false}
-          enableZoom={false}
-          maxPolarAngle={Math.PI / 2}
-          minPolarAngle={Math.PI / 2}
-        />
-        <Computers isMobile={isMobile} />
-      </Suspense>
+      <Canvas
+        frameloop="always"
+        shadows
+        dpr={[1, 2]}
+        camera={{ position: [20, 3, 5], fov: isMobile ? 40 : 25 }}
+        gl={{ preserveDrawingBuffer: true }}
+      >
+        <Suspense fallback={<CanvasLoader />}>
+          <OrbitControls
+            enablePan={false}
+            enableZoom={false}
+            enableRotate={!isMobile}
+            maxPolarAngle={Math.PI / 2}
+            minPolarAngle={Math.PI / 2}
+          />
+          <Computers isMobile={isMobile} />
+        </Suspense>
 
-      <Preload all />
-    </Canvas>
+        <Preload all />
+      </Canvas>
+    </div>
   );
 };
 

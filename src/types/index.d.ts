@@ -22,6 +22,7 @@ export type TMExperienceCard = {
   iconBg: string;
   date: string;
   points: string[];
+  image?: string;
 } & Required<Omit<TCommonProps, "name">>;
 
 export type TTestimonial = {
